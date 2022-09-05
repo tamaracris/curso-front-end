@@ -19,7 +19,7 @@ Linux (apt-get): sudo apt-get install git
 Mac (brew): brew install git
 Criar conta no GitHub
 Clonar o projeto
-git clone https://github.com/cavalcantemmarcelo/curso-frontend.git
+git clone https://github.com/tamaracris/curso-front-end-exercicios-tamara
 
 Commits
 Informação de alteração
