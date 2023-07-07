@@ -40,6 +40,10 @@ textarea{
 
 }
 
+#carouselExampleIndicators {
+    width: 12px;
+}
+
 .table-hover{
     background-color:rgb(251, 236, 124);
 }
@@ -47,3 +51,4 @@ textarea{
 .btn{
     background-color:red;
 }
+
