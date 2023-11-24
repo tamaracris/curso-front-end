@@ -33,7 +33,7 @@
                         <a class="nav-link" href="about.html"><font color="yellow"><br>Sobre nós</a></font></br>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html"><font color="yellow"><br> Contato</a></font></li><br>
+                        <a class="nav-link nav-modal-open" href="contact.html" rel="contato"><font color="yellow"><br> Contato</a></font></li><br>
                     </li>
                 </ul>
             </div>
@@ -173,7 +173,40 @@
         </div>
     </div>
 
-    
+    <div class="subscribe-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <div class="line-dec"></div>
+                        <h1>Receba novidades</h1>
+                    </div>
+                </div>
+                <div class="col-md-8 offset-md-2">
+                    <div class="main-content">
+                        <p>Insira seus dados abaixo para receber novidades sobre novos modelos de guitarras </p>
+                        <div class="container">
+                            <form id="subscribe" class="form" action="" method="get">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <fieldset>
+                                            <input name="email" type="text" class="form-control" id="email" value=""
+                                                placeholder="Seu e-mail...">
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <fieldset>
+                                            <button type="submit" id="form-submit" class="button">Inscreva-se</button>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <div class="footer">
         <div class="container">
@@ -219,6 +252,83 @@
                 </div>
             </div>
         </div>
+
+
+         <!-- Modal Body -->
+        <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+        <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitleId">Contato</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        
+
+                        <form action="" class="form">
+                            <div class="mb-3">
+                                <label for="nome" class="form-label">Name</label>
+                                <input type="text" name="nome" id="nome" class="form-control" placeholder="" aria-describedby="helpId">
+                                <small id="helpId" class="text-muted">Insira seu nome.</small>
+                            </div>
+                
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" name="email" id="email" class="form-control" placeholder=""
+                                    aria-describedby="helpId">
+                                <small id="helpId" class="text-muted">Insira seu e-mail</small>
+                            </div>
+                
+                            <div class="mb-3">
+                                <label for="date" class="form-label">Data</label>
+                                <input type="text" name="date" id="date" class="form-control" placeholder="" aria-describedby="helpId">
+                                <small id="helpId" class="text-muted">Insira um tempo válido</small>
+                            </div>
+                
+                            <div class="mb-3">
+                                <label for="hora" class="form-label">Hora</label>
+                                <input type="text" name="hora" id="hora" class="form-control" placeholder="" aria-describedby="helpId">
+                                <small id="helpId" class="text-muted">Insira um tempo válido</small>
+                            </div>
+                
+                            <div class="mb-3">
+                                <label for="cep" class="form-label">CEP</label>
+                                <input type="text" name="cep" id="cep" class="form-control" placeholder="" aria-describedby="helpId">
+                                <small id="helpId" class="text-muted">Digite seu CEP</small>
+                            </div>
+                
+                            <div class="mb-3">
+                                <label for="cel" class="form-label">Celular</label>
+                                <input type="text" name="cel" id="cel" class="form-control" placeholder="" aria-describedby="helpId">
+                                <small id="helpId" class="text-muted">Digite o número do seu Contato</small>
+                            </div>
+                
+                            <div class="mb-3">
+                                <label for="cpf" class="form-label">CPF</label>
+                                <input type="text" name="cpf" id="cpf" class="form-control" placeholder="" aria-describedby="helpId">
+                                <small id="helpId" class="text-muted">Digite o seu CPF</small>
+                            </div>
+                
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                
+                        </form>
+        
+
+                        
+
+
+
+        <!-- Optional: Place to the bottom of scripts -->
+        <script>
+            const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
+        
+        </script>
+
+
+        
+
+
         
         <script src="./vendor/jquery/jquery-3.6.0.min.js"></script>
         <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
@@ -226,3 +336,5 @@
         <script src="./js/custom.js"></script>
     </body>
     </html>
+
+    

@@ -47,18 +47,31 @@ $(document).ready(function(){
 
         alert('Produto esgotado');
 
+     });
+
+
+     /* Ouvinte de eventos .nav-modal-open
+     */
+      
+     $('.nav-modal-open').on('click', function(e){
+      e.preventDefault();
+
+      let elem = $(this).attr('rel')
+
+      $('.modal-body').html($('#'+elem).html())
+
+      let myModal = new bootstrap.Modal($('#modalId'))
+
+      myModal.show()
+
      })
 
-     
-     
-     
-     
-     
+   
+
+   
+ 
 
 
 
 
-
-
-
-})
+});
